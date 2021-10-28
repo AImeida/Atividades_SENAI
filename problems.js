@@ -4,29 +4,23 @@ function Problem1() {
     alert(`O dobro de ${x} é ${2 * x}`)
 }
 function Problem2() {
-    var x = prompt('Digite o primeiro número')
-    var y = prompt('Digite o segundo número')
-    x = Number(x); y = Number(y)
+    var x = Number(prompt('Digite o primeiro número'))
+    var y = Number(prompt('Digite o segundo número'))
     alert(`${x} + ${y} = ${x + y}`)
 }
 function Problem3() {
-    var almoço = prompt('Digite o valor total do almoço')
-    almoço = Number(almoço)
-    var total = almoço + 13/100*almoço
-    alert(`Total a pagar: ${total}`)
+    var almoço = Number(prompt('Digite o valor total do almoço'))
+    var total = almoço + 0.13*almoço
+    alert(`Total do garçom: R$${0.13*almoço.toFixed(2)} \n Total a pagar: R$${total.toFixed(2)}`)
 }
 function Problem4() {
-    var dias = prompt('Dias:')
-    var horas = prompt('Horas:')
-    dias = Number(dias); horas = Number(horas)
-    
+    var dias = Number(prompt('Dias:'))
+    var horas = Number(prompt('Horas:'))    
     tempo = 24*dias + horas
     alert(`Duração da viagem: ${tempo}h`)
 }
 function Problem5() {
-    var n = prompt('Digite um número')
-    n = Number(n)
+    var n = Number(prompt('Digite um número'))
     alert(`Seu posterior é ${n+1}
     Seu anterior é ${n-1}`)
-
 }

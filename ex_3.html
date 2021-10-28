@@ -10,10 +10,9 @@
 <body>
 
 <script>
-    var almoço = prompt('Digite o valor total do almoço')
-    almoço = Number(almoço)
-    var total = almoço + 13/100*almoço
-    alert(`Total a pagar: ${total}`)
+    var almoço = Number(prompt('Digite o valor total do almoço'))
+    var total = almoço + 0.13*almoço
+    alert(`Total do garçom: R$${0.13*almoço.toFixed(2)}\n Total a pagar: R$${total.toFixed(2)}`)
 </script>
     
 </body>

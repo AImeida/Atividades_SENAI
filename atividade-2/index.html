@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="app.js" async></script> -->
+    <title>Venda de Veículos Usados</title>
+</head>
+<body>
+
+    <h2>Venda de Usados</h2>
+
+    <form id="form" action="">
+
+        <label for="modelo">Modelo:</label><br>
+        <input type="text" id="modelo" name="modelo" placeholder="Modelo"><br>
+        <label for="number">Valor R$:</label><br>
+        <input type="text" id="preço" name="preço" placeholder="Valor"><br>
+        <input type="submit" value="verificar"><hr>
+
+    </form><br>
+
+    <div id="mostrar"></div>
+
+    <script>
+        // var form = document.getElementById('form')
+        // var modelo
+        // var preço
+        // var parçelas
+        // var parçelas_juros
+        form.addEventListener('submit', function(){
+            event.preventDefault()
+
+            var modelo = document.getElementById('modelo').value
+            console.log(modelo)
+
+            var preço = document.getElementById('preço').value
+            preço = Number(preço)
+            console.log(preço)
+
+            var parcelas = .5*preço / 60
+            console.log(parcelas)
+
+            var parcelas_juros = parcelas + 0.7*parcelas
+            parcelas_juros = parcelas_juros.toPrecision(6)
+            console.log(parcelas_juros)
+
+
+            document.getElementById('mostrar').innerHTML = `
+                <h2>Promoção: ${modelo}</h2>
+                <h2>Entrada de ${.5*preço}</h2>
+                <h2>+60 de R$: ${parcelas_juros}</h2>
+            `
+        })
+
+        
+
+
+    </script>
+
+</body>
+</html>

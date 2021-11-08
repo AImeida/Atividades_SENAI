@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5. Detran</title>
+</head>
+<body>
+    <h1>Detran</h1>
+    <script>
+        var vmax = Number(prompt('Velocidade máxima da via (km/h):'))
+        var v = Number(prompt('Velocidade registrada (km/h):'))
+
+        if (v > vmax && v <= 1.2*vmax) {
+            alert('Multa Leve')
+        }
+        if (v > 1.2*vmax) {
+            alert('Multa Grave')
+        }
+        if (v <= vmax) {
+            alert('Sem Multa')
+        }
+        // switch (v) {
+        //     // case v > vmax && v <= 1.2*vmax:
+        //         // alert('Multa Leve')
+        //         // break;
+
+        //     case v > 1.2*vmax:
+        //         alert('Multa Grave')
+        //         break;
+        
+        //     // default:
+        //         // alert('Sem Multa')    
+        //         // break;
+        // }
+    </script>
+</body>
+</html>

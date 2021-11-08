@@ -7,7 +7,7 @@
     <!-- <link rel="stylesheet" href="reset.css"> -->
     <link rel="stylesheet" href="style.css">
     <script src="app.js" async></script>
-
+    
     <title>Venda de Usados</title>
 </head>
 <body>
@@ -19,10 +19,10 @@
     <form id="form" action="">
 
         <label for="modelo">Modelo:</label><br>
-        <select onclick="pictures()" id="modelo">
+        <select id="modelo">
             <option value="Corsa">Chevrolet Corsa 2001</option>
             <option value="Fusca">Chevrolet Fusca 2006</option>
-            <option value="Volvo">Volvo Sedan S70 1997</option>
+            <option value="Vovlo">Volvo Sedan S70 1997</option>
             <option value="Mini">Mini Cooper 1999</option>
             <option value="Mustang">Ford Mustang 70s</option>      
         </select>
@@ -36,38 +36,41 @@
 
     </form><br><hr>
 
-    <div id="mostrar">
-        <img id="mustang" src="img/mustang.jpg" alt="" width="350px">
-    </div>
+    <div id="mostrar"></div>
 
 </div>
 
-<script>
-    function pictures(){
+    <!-- <script>
+  
+        form.addEventListener('submit', function(){
+            event.preventDefault()
 
-        switch(document.getElementById("modelo").options.selectedIndex) {
-            case 0:
-                document.getElementById("mustang").style.display = "block";
-                break;
-            case 1:
-                i = 1
-                break;
-            case 2:
-                i = 2
-                break;
-            case 3:
-                i = 3
-                break;
-            case 4:
-                document.getElementById("mustang").style.display = "none";
-                break;
-            default:
-                document.getElementById("mustang").style.display = "block";
-        }
+            var modelo = document.getElementById('modelo').value
+            console.log(modelo)
 
-    }
+            var preço = document.getElementById('preço').value
+            preço = Number(preço)
+            console.log(preço)
 
-</script>
+            var parcelas = .5*preço / 60
+            console.log(parcelas)
+
+            var parcelas_juros = parcelas + 0.7*parcelas
+            parcelas_juros = parcelas_juros.toPrecision(6)
+            console.log(parcelas_juros)
+
+
+            document.getElementById('mostrar').innerHTML = `
+                <h2>Promoção: ${modelo}</h2>
+                <h2>Entrada de ${.5*preço}</h2>
+                <h2>+60 de R$: ${parcelas_juros}</h2>
+            `
+        })
+
+        
+
+
+    </script> -->
 
 </body>
 </html>

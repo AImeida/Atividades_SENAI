@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noticiário App</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <script src="app_noticias.js" defer></script>
+</head>
+
+<body>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Noticiário
+      </h1>
+      <hr>
+      <div class="field">
+        <label class="label">Notícia</label>
+        <div class="control is-loading is-large">
+          <textarea class="textarea is-dark" required id="noticia" placeholder="Insira no noticiário"></textarea>
+        </div>
+      </div>
+      <div class="field is-grouped is-grouped-centered">
+        <div class="control">
+          <button class="button is-link is-outlined" id="btnCadastrarNoticia">Cadastrar</button>
+        </div>
+        <div class="control">
+          <button class="button is-success is-outlined" id="btnMostrar">Listar Notícias (atualizar)</button>
+        </div>
+        <div class="control">
+          <button class="button is-danger is-outlined" id="btnDeletar">Deletar Todas Noticias!</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container">
+      <h2 class="subtitle" id="tituloNoticias">
+        Aperte o "Listar Notícias" para mostrar as <span id="qtdNoticias"></span> últimas notícias
+      </h2>
+      
+      <div id="mostrarNoticias">
+
+      </div>
+    </div>
+  </section>
+
+  
+</body>
+</html>

@@ -6,4 +6,5 @@ Peça um conselho ao altíssimo bode sábio
     <li>estilo da pagina</li>
     <li>animações</li>
     <li>traduzir os conselhos (?)</li>
+    <li>imagens de bodes API (?)</li>
 </ol>

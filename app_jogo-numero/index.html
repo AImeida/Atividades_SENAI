@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,4 +61,68 @@
     
 </body>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="https://unpkg.com/bonsai.css@latest/dist/bonsai.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.2.1/dist/sweetalert2.all.min.js"></script>
+    <script src="jogo-numero.js" defer></script>
+    <!-- <script src="js/app.js"></script> -->
+    <title>Adivinhe o Número</title>
+</head>
+
+<body>
+<!-- Container -->
+<div class="container">
+    <!-- imagem -->
+    <img id="bingo-img" src="img/bingo.png" alt="guess the number" width="240px" height="240px">
+    <!-- titulo -->
+    <h1>Adivinhe o número</h1><br>
+
+    <!-- container do jogo -->
+    <div class="game-area">
+        <!-- form do jogo -->
+        <form>
+            <!-- BOX digitar numero / Botão Guess  -->
+            <input id="numero" type="number" placeholder="Digite um número de 1 a 60">
+            <!-- <label for="numero">Digite um número entre 1 e 60</label> -->
+            <!-- Botão Guess -->
+            <button id="apostar" type="submit">Apostar</button>
+            <hr>
+                <!-- Botão Play Again -->
+
+            <!-- BOX qtd erros -->
+            <div id="boxErro" class="box">
+                Erro(s): 
+                <span id="saidaErro"><h3>0</h3></span>
+            </div>
+            <hr>
+
+            <!-- BOX qtd chances -->
+            <div id="boxChance" class="box">
+                Chance(s): 
+                <span id="saidaChances"><h3>7</h3></span>
+            </div>
+            <hr>
+
+            <!-- BOX Dica -->
+            <div id="boxDica" class="box">
+                Dica: 
+                <span id="saidaDica"><h3>Sem Dicas</h3></span>
+            </div>
+            <hr>
+        </form>
+    </div>
+           
+</div>
+    
+</body>
+
+>>>>>>> 67f75f3a0d524eacd0a048c192fa6670f7b88308
 </html>

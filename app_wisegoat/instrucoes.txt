@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Sua página inicial deverá conter um botão "Pedir conselho", que irá redirecionar para a segunda página.
 
 A segunda página deverá contar uma frase e uma imagem de um bode
@@ -5,4 +6,13 @@ A segunda página deverá contar uma frase e uma imagem de um bode
 A frase poderá ser gerada com a API Advice Slip. 
 Para utilizá-la faça uma requisição GET para a URL https://api.adviceslip.com/advice
 
+=======
+Sua página inicial deverá conter um botão "Pedir conselho", que irá redirecionar para a segunda página.
+
+A segunda página deverá contar uma frase e uma imagem de um bode
+
+A frase poderá ser gerada com a API Advice Slip. 
+Para utilizá-la faça uma requisição GET para a URL https://api.adviceslip.com/advice
+
+>>>>>>> 67f75f3a0d524eacd0a048c192fa6670f7b88308
 Você pode aplicar uma animação no bode da página inicial, para dar o efeito que ele está flutuando (animate.css)

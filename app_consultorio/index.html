@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -47,4 +48,55 @@
 </main>
 
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<title>Consutório Médico</title>
+	<!-- <script src="js/app.js" defer></script> -->
+	<script src="consultorio.js" defer></script>
+</head>
+<body>
+
+<main class="container bg-grey">
+
+<div class="bg-light p-5 m-5 rounded border border-primary">
+
+	<h1>ATENDIMENTO</h1>
+	<hr>
+	<!-- Input nome do paciente -->
+	<div class="form-floating">
+		<input id="paciente" type="texto" class="form-control" name="paciente" placeholder="Entre com o nome do Paciente">
+		<label for="paciente">nome do paciente</label>
+	</div>
+	<br>
+	<!-- Botões -->
+	<div class="d-flex justify-content-end">
+		<input id="btnAdd" type="button" class="btn btn-outline-primary mx-1" value="Adicionar"> 
+		<input id="btnUrg" type="button" class="btn btn-outline-danger mx-1" value="Adicionar Urgência">
+		<input id="btnAtender" type="button" class="btn btn-outline-success mx-1" value="Atender">
+		<input id="btnClean" type="button" class="btn btn-outline-light mx-1" value="Esvaziar Fila">
+	</div>
+	<hr><br>
+
+	<!-- Box 'Em atendimento: ' -->
+	<div id="BoxAtendimento" class="alert alert-success" role="alert">
+		<h2>Em atendimento: <span id="nomePessoaAtendimento"></span></h2>
+	</div>
+
+	<!-- Lista de Espera -->
+	<h3>Lista de Espera</h3>
+	<ul id="listaEspera" class="list-group">
+		<li class="list-group-item">Aguardando pacientes...</li>
+	</ul>
+</div>
+
+</main>
+
+</body>
+>>>>>>> 67f75f3a0d524eacd0a048c192fa6670f7b88308
 </html>

@@ -1,0 +1,18 @@
+body
+{
+	height: 100vh;
+	display: flex;
+	
+}
+.container
+{
+	background-color: rgba(128, 0, 128, 0.459);
+	display: flex;
+	/* justify-content: space-around; */
+	align-items: center;
+	height: 60vh;
+}
+/* .child
+{
+	background-color: thistle;
+} */

@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;300;400&display=swap');
+
+
+html
+{
+	height: 100%;
+}
+body
+{
+	background-color: black;
+	background-image: url(img/restaurante.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	margin: 0;
+	padding: 0;
+	font-family: 'Yaldevi';
+}
+.container
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 1024px;
+}
+header
+{
+	height: 110px;
+	text-align: center;
+}
+nav
+{
+	background-color: rgb(3, 3, 3, 0.500);
+	text-align: center;
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+nav a
+{
+	text-decoration: none;
+	font-size: 12px;
+	padding-left: 14px;
+	padding-right: 14px;
+	transition: 0.8s;
+}
+
+nav a:hover
+{
+	z-index: 100;
+	background: aliceblue;
+	color: black;
+	opacity: 1;
+}
+/*nav:hover a
+{
+	transform: scale(0.8);
+	background: grey;
+	opacity: 0.1;
+}*/
+main
+{
+	height: 400px;
+	text-align: center;
+	padding-top: 40px;
+	padding-left: 240px;
+	padding-right: 240px;
+}
+footer
+{
+	background-color: rgb(3, 3, 3, 0.800);
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+footer p
+{
+	font-size: 10px;
+	text-align: center;
+}
+h1
+{
+	color: white;
+	font-size: 70px;
+}
+p
+{
+	color: white;
+	font-size: 18px;
+	text-align: justify;
+}
+a
+{
+	color: white;
+	text-decoration-line: underline overline;
+	text-decoration-style: double;
+	text-decoration-color: rgba(133, 133, 133, 0.5);
+}
+button
+{
+	width: 200px;
+	height: 50px;
+	border: none;
+	background-color: rgba(133, 133, 133, 0.1);
+	border-radius: 6px;
+	box-shadow: inset 0 0 1px 0 ghostwhite;
+	transition: ease-out 0.3s;
+}
+button a 
+{
+	text-decoration: none;
+	font-size: 120%;
+	color: white;
+}
+button:hover
+{
+	box-shadow: inset 200px 0 0 0 #F4F4F4;
+}
+button a:hover
+{
+	color: black;
+}
+.maps
+{
+	padding-bottom: 100px;
+}

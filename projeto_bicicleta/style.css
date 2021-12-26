@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@300&display=swap');
+
+html
+{
+	/*background-image: linear-gradient(to top left, #85FFBD, #FFFB7D);*/
+	background: linear-gradient(to right, #faaca8, #ddd6f3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+body
+{
+	font-family: 'Roboto', sans-serif;
+	color: white;
+}
+.container
+{
+	width: 1024px;
+	min-height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+header
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+main
+{
+	min-height: 300px;
+	display: flex;
+	align-items: center;
+}
+.box1
+{
+	flex: 2;
+}
+.box2
+{
+	flex: 1;
+}
+.cardarea
+{
+	min-height: 300px;
+	display: flex;
+	justify-content: space-around;
+}
+.card1
+{
+	background-color: #DE5781;
+	min-height: 300px;
+	width: 30%;
+}
+.card2
+{
+	background-color: #C657DE;
+	min-height: 300px;
+	width: 30%;
+}
+.card3
+{
+	background-color: #B662FA;
+	min-height: 300px;
+	width: 30%;
+}
+h1
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 40px;
+}
+a {
+	text-decoration: none;
+}

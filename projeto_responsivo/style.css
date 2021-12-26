@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background-color: #7a60606b;
+}
+a
+{
+    color: white;
+    text-decoration: none;
+}
+.container
+{
+    min-height: 500px;
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+header
+{
+    max-width: 1024px;
+    background-color: rgb(10, 73, 67);
+    min-height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-container
+{
+    font-size: 0.8rem;
+    background-color: rgb(10, 73, 67);
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+}
+.col
+{
+    background-color: rgba(10, 73, 67, 0.185);
+    width: 30%;
+    margin-bottom: 40px;
+}
+.col p
+{
+    color: rgba(0, 0, 0, 0.829);
+    font-size: 0.87rem;
+    padding: 20px;
+    line-height: 1.1rem;
+}
+.col img
+{
+    width: 100%;
+    height: auto;
+}
+p::first-line
+{
+    font-weight: bold;
+}
+
+.hide-desktop-only
+{
+    display: none;
+}
+.mybutton
+{
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 20px;
+}
+.highlight
+{
+    font-weight: bold;
+}
+.mob-wrapper
+{
+    display: none;
+}
+
+
+/* tablet */
+@media (max-width: 768px){
+    .col
+    {
+        width: 45%;
+    }
+    .hide-desktop-only
+    {
+        display: block;
+    }
+    .header-container
+    {
+        position: relative;
+    }
+    .container
+    {
+        padding-top: 40px;
+    }
+    nav
+    {
+        display: none;
+    }
+    nav a
+    {
+        display: block;
+    }
+    .logo
+    {
+        padding: 40px;
+    }
+    .mybutton
+    {
+        margin-left: 0;
+    }
+    .mob-wrapper
+    {
+        display: block;
+        padding-right: 30px;
+    }
+    .mob-nav
+    {
+        display: none;
+        position: absolute;
+        padding: 15px;
+    }
+    .navbutton
+    {
+        display: block;
+        background-color: rgb(79, 99, 134);
+        padding: 15px 30px;
+        margin-left: -75px;
+        text-align: center;
+    }
+
+}
+
+/* smartphone */
+@media (max-width: 400px){
+    .col
+    {
+        width: 100%;
+    }
+    .hide-mobile
+    {
+        display: none;
+    }
+}
